@@ -1,0 +1,20 @@
+<!doctype html>
+<head>
+<title>DependancyManager Example</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<style type="text/css">
+  {% required_css %}
+  {% block css %}
+  {% endblock %}
+</style>
+</head>
+<body>
+  {% block body %}
+  {% endblock %}
+  {% required_html %}
+  <script type='text/javascript'>
+    {% required_js %}
+    {% block javascript %}
+    {% endblock %}
+  </script>
+</body>

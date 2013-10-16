@@ -1,0 +1,21 @@
+application: example
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: false
+
+inbound_services:
+- warmup
+
+derived_file_type:
+- python_precompiled
+
+default_expiration: '365d'
+
+libraries:
+- name: jinja2
+  version: latest
+
+handlers:
+- url: /
+  script: handlers.example.app

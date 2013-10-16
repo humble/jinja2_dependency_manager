@@ -1,0 +1,16 @@
+{% require "contact_form/contact_form.css" %}
+{% require "contact_form/contact_form.js" %}
+<div class="contact-form">
+  <h2>Contact us</h2>
+  <a href="#" id="close-contact-form">×</a>
+  <div id="confirmation">Thank you. Your message would have been sent if this weren't just a demo.</div>
+  <form>
+    <label>Your email:
+      <input type="email" id="contact-email" placeholder="address@example.com" />
+    </label>
+    <label>Your message:
+      <textarea id="contact-message"></textarea>
+    </label>
+    <input type="submit" id="contact-submit" value="Send Message" />
+  </form>
+</div>
