@@ -2,7 +2,7 @@ import webapp2
 from webapp2_extras import jinja2
 from helpers import is_debug
 
-DEPENDENCY_MANAGER = 'extensions.jinja2_dependency_manager.DependancyManager'
+DEPENDENCY_MANAGER = 'extensions.jinja2_dependency_manager.DependencyManager'
 
 def jinja2_factory(app):
     debug = is_debug()

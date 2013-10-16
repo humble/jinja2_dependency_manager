@@ -51,11 +51,11 @@ class InvalidPlaceholders(Exception):
   pass
 
 
-class DependancyManager(Extension):
+class DependencyManager(Extension):
   tags = set(["require"] + OUTPUT_TAGS)
 
   def __init__(self, environment):
-    super(DependancyManager, self).__init__(environment)
+    super(DependencyManager, self).__init__(environment)
     environment.extend(dm_context = {})
 
   def parse(self, parser):
@@ -115,7 +115,7 @@ class DependancyManager(Extension):
 
 
   def add_required_content(self, rendered):
-    """This method adds the required dependancies to the final page. It is
+    """This method adds the required dependencies to the final page. It is
     intended to be called after the normal jinja2 render phase."""
     mapping = {}
     for content_type in TYPES:
