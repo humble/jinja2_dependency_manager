@@ -82,7 +82,7 @@ class DependencyManager(Extension):
 
       if file_type in self.environment.dm_context and file_path in self.environment.dm_context[file_type]:
         # We've already encountered a previous {% require %} tag referencing this file, so no need to do anything.
-        return ""
+        return nodes.Const("")
       else:
         args = [
           file_path_node,
