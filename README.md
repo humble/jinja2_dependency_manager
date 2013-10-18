@@ -64,3 +64,4 @@ AppEngine.
 * Figuring out a way to make `add_required_content()` be called automatically.
   Currently it has to be called manually.
 * Performance improvements.
+* The current implementation is probably not suitable for use with threadsafe: true.
